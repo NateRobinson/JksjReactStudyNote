@@ -11,6 +11,16 @@ class MessageList extends React.PureComponent {
   }
 }
 
+class MessageListNew extends React.PureComponent {
+  render() {
+    return (
+      <div>
+        {this.props.messages.map(msg => <p>{msg}</p>)}
+      </div>
+    );
+  }
+}
+
 export class ChatApp extends React.Component {
   state = {
     messages: [],
@@ -35,9 +45,9 @@ export class ChatApp extends React.Component {
   render() {
     return (
       <div>
-        <MessageList messages={this.state.messages} />
+        <MessageListNew messages={this.state.messages} />
         <div>
-          <input value={this.state.inputMsg} />
+          <input value={this.state.inputMsg} onChange={e => this.handleInput(e)}/>
           <button onClick={this.handleSend}>Send</button>
         </div>
         <h2>{this.props.time.toLocaleString()}</h2>
