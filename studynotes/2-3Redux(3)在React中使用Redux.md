@@ -1,4 +1,4 @@
-## 在 React 中使用 Redux
+## Redux(3)在 React 中使用 Redux
 
 redux 是一个独立于 ui 框架之外的状态管理框架
 

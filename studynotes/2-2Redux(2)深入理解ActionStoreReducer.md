@@ -1,4 +1,4 @@
-##  深入理解 Action ，Store ，Reducer
+##  Redux(2) 深入理解 Action ，Store ，Reducer
 
 #### 1. 理解 Store
 
